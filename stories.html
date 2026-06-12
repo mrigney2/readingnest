@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <title>The Reading Nest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<html>
+    <body>
+        <div id="loading"><div>Building the nest...</div></div>
+        <!-- <h1>The Reading Nest</h1> -->
+        <div class="content"> 
+            <video id="vid" src="Illustration.mp4" muted autoplay loop></video>
+            <div class="book-wrapper">
+                <div id="book">
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="book-border">
+                        <path d="
+                        M .5 .25 
+                        L 20 .5 L 20 2 L 25 .5
+
+                        L 60 .5 L 65 1.5 L 72 .5
+                    
+                        L 99.5 .5 L 99 40 
+
+                        L 99.5 50 L 98.5 54 L 99.5 55
+
+                        L 99.5 95 L 95.5 96 L 98.5 98
+
+                        L 99.5 99.75 L 65 99.5
+
+                        L 46 99.75 L 44 98 L 41 99.75
+
+                        L 20 99.5 L .5 99.75 
+
+                        L .75 80  L .5 70
+
+                        L .5 50 L 1.5 47 L 1 45
+
+                        L .5 .25
+                        " vector-effect="non-scaling-stroke"
+                        >
+                        </path>
+                    </svg>
+                    <div id="page"></div>
+                </div>
+                <div class="footer"> 
+                    <button id="prev" class="navigation"><span>❮<span class="tooltiptext">Previous</span></span></button>
+                    <div class="footer-center">
+                        <button id="menu"><span>☰<span class="tooltiptext">Menu</span></span></button>
+                        <button id="shuffle"><span>⟲<span class="tooltiptext"></span><span class="tooltiptext">Shuffle</span></span></button>
+                    </div>
+                    <button id="next" class="navigation"><span>❯<span class="tooltiptext">Next</span></span></button>
+                </div>
+            </div>
+        </div>
+
+
+        <svg aria-hidden="true" focusable="false" class="svg-defs">
+            <defs>
+                <!-- <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#FFFFFF"/>
+                    <stop offset="40%" stop-color="#F6F6F6"/>
+                    <stop offset="100%" stop-color="#E3E3E3"/>
+                </linearGradient> -->
+
+                <filter id="pencil">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="2" seed="5"/>
+                    <feDisplacementMap in="SourceGraphic" scale="2.5" />
+                </filter>
+
+                <filter id="text">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.2" numOctaves="8" seed="2"/>
+                    <feDisplacementMap in="SourceGraphic" scale="1" />
+                </filter>
+            </defs>
+        </svg>
+
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
+
