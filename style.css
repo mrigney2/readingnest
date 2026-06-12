@@ -171,11 +171,6 @@ button:hover {
     cursor: pointer;
 }
 
-button:hover::before {
-    content:"";
-    border-bottom-width: 4px;
-}
-
 button:active {
     background-color:  #3939391d;
 }
@@ -254,6 +249,11 @@ li:hover {
 @media (hover: hover) {
     button:hover .tooltiptext {
         visibility: visible;
+    }
+
+    button:hover::before {
+        content:"";
+        border-bottom-width: 4px;
     }
 }
 
