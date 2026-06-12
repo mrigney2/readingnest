@@ -227,6 +227,7 @@ li:hover {
         justify-content: center;
         flex-direction: row-reverse;
         gap: 80px;
+        background-color: red;
     }
 
     h1 {
