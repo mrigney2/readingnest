@@ -43,6 +43,7 @@ h1 {
     align-items: center;
     gap: 16px;
     overflow: hidden;
+    min-height: 0;
 }
 
 video {
