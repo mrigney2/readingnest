@@ -92,7 +92,6 @@ path {
 }
 
 #page {
-    flex: 1;
     overflow: scroll;
     margin: 24px 12px;
     padding: 24px 24px;
