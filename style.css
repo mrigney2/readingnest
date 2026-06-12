@@ -15,6 +15,7 @@ body {
     font-family: "Quintessential", serif;
     color: #393939;
     white-space: pre-line;
+    overflow: hidden;
 }
 
 #loading {
@@ -93,6 +94,7 @@ path {
 }
 
 #page {
+    /* flex: 1; */
     overflow: scroll;
     margin: 24px 12px;
     padding: 24px 24px;
@@ -127,14 +129,7 @@ path {
     left: -60px;
 }
 
-#prev, #menu, #shuffle, #next {
-    opacity: 0;
-    transition: opacity .5s linear;
-    transform: translateY(48px);
-    transition: transform .5s ease-out;
-}
-
-#prev:hover .tooltiptext, #menu:hover .tooltiptext, #shuffle:hover .tooltiptext, #next:hover .tooltiptext  {
+button:hover .tooltiptext  {
     visibility: visible;
 }
 
@@ -161,6 +156,10 @@ button {
     border: none;
     height: 40px;
     width: 40px;
+    opacity: 0;
+    transition: opacity .5s linear;
+    transform: translateY(48px);
+    transition: transform .5s ease-out;
 }
 
 button::before {
