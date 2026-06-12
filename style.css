@@ -7,7 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;       
+    height: 100dvh;       
     margin: 0px;
     padding: 24px;
     box-sizing: border-box;
@@ -94,8 +94,8 @@ path {
 }
 
 #page {
-    /* flex: 1; */
-    overflow: scroll;
+    flex: 1;
+    overflow-y: auto;
     margin: 24px 12px;
     padding: 24px 24px;
     z-index: 2;
@@ -227,7 +227,6 @@ li:hover {
         justify-content: center;
         flex-direction: row-reverse;
         gap: 80px;
-        background-color: red;
     }
 
     h1 {
