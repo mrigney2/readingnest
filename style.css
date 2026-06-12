@@ -129,10 +129,6 @@ path {
     left: -60px;
 }
 
-button:hover .tooltiptext  {
-    visibility: visible;
-}
-
 .footer {
     display: flex; 
     flex-direction: row;
@@ -250,6 +246,14 @@ li:hover {
     video {
         max-width: 700px;
         height: auto;
+    }
+}
+
+
+/* only display tooltips on hover devices */
+@media (hover: hover) {
+    button:hover .tooltiptext {
+        visibility: visible;
     }
 }
 

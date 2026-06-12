@@ -157,21 +157,21 @@ window.addEventListener('load', () => {
 });
 
 // check if device is touch
-function isTouchDevice() {
-  let isTouch = window.matchMedia('(hover: none)').matches || window.matchMedia('(pointer: coarse)').matches;
-  if (isTouch == true) {
-    document.getElementById("prev:hover").style.visibility = "hidden";
-    document.getElementById("menu:hover").style.visibility = "hidden";
-    document.getElementById("shuffle:hover").style.visibility = "hidden";
-    document.getElementById("next:hover").style.visibility = "hidden";
-  }};
+// function isTouchDevice() {
+//   let isTouch = window.matchMedia('(hover: none)').matches || window.matchMedia('(pointer: coarse)').matches;
+//   if (isTouch == true) {
+//     document.getElementById("prev:hover").style.visibility = "hidden";
+//     document.getElementById("menu:hover").style.visibility = "hidden";
+//     document.getElementById("shuffle:hover").style.visibility = "hidden";
+//     document.getElementById("next:hover").style.visibility = "hidden";
+//   }};
 
 
 
 // initial story render
 // renderStory();
 
-isTouchDevice();
+// isTouchDevice();
 
 
 // footer buttons
