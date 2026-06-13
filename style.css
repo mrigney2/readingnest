@@ -99,7 +99,7 @@ path {
 #page {
     flex: 1;
     min-height: 0;
-    /* overflow-y: auto; */
+    overflow-y: scroll;
     margin: 24px 12px;
     padding: 24px 24px;
     z-index: 2;
