@@ -77,7 +77,6 @@ video {
     transition: opacity 2.5s linear;
     transform: translateY(500px);
     transition: transform 1s ease-out;
-    background-color: red;
 }
 
 
@@ -100,7 +99,9 @@ path {
 #page {
     flex: 1;
     min-height: 0;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    overflow-y: auto;
+    max-height: 100%;
     margin: 24px 12px;
     padding: 24px 24px;
     z-index: 2;
