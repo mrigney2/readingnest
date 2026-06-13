@@ -68,7 +68,7 @@ video {
 }
 
 #book {
-    overflow: hidden;
+    /* overflow: hidden; */
     flex: 1;
     min-height: 0;
     position: relative;
