@@ -15,7 +15,7 @@ body {
     font-family: "Quintessential", serif;
     color: #393939;
     white-space: pre-line;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #loading {
@@ -44,7 +44,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    overflow: hidden;
+    /* overflow: hidden; */
     min-height: 0;
 }
 
@@ -57,7 +57,7 @@ video {
 }
 
 .book-wrapper {
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     flex: 1;
     min-height: 0;
