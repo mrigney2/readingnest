@@ -18,6 +18,7 @@ function renderStory() {
     // setTimeout(() => {
     //     document.getElementById("page").style.opacity = 1;
     // }, 600)
+    document.getElementById("page").scrollTop = 0;
     document.getElementById("page").textContent = currentStory.title + " - " + currentStory.createdAt + "\n\n" + currentStory.content;
     // setTimeout(() => {
     //     document.getElementById("page").textContent = currentStory.title + " - " + currentStory.createdAt + "\n\n" + currentStory.content;
@@ -159,8 +160,8 @@ window.addEventListener('load', () => {
     }, 5200);
 });
 
-// load video
-document.getElementById("vide").play();
+// // load video
+// document.getElementById("vide").play();
 
 
 // footer buttons
