@@ -18,7 +18,7 @@ function renderStory() {
     // setTimeout(() => {
     //     document.getElementById("page").style.opacity = 1;
     // }, 600)
-document.getElementById("page").textContent = currentStory.title + " - " + currentStory.createdAt + "\n\n" + currentStory.content;
+    document.getElementById("page").textContent = currentStory.title + " - " + currentStory.createdAt + "\n\n" + currentStory.content;
     // setTimeout(() => {
     //     document.getElementById("page").textContent = currentStory.title + " - " + currentStory.createdAt + "\n\n" + currentStory.content;
     // }, 601)
@@ -85,6 +85,7 @@ function nextStory() {
     renderStory(currentIndex);
 }
 
+// navigates to table of contents
 function menu() {
     if (currentView === "story") {
         currentView = "menu";
@@ -97,6 +98,7 @@ function menu() {
     }
 }
 
+// navigates to random story
 function shuffle() {
     let randomNum = Math.random();
     let newIndex = 0;
@@ -118,26 +120,27 @@ function shuffle() {
     }
 }
 
-
-// on load show spinner
+// initial loading 
 window.addEventListener('load', () => {
-    // setTimeout(() => {
-    //     document.getElementById("loading").style.opacity = 0;
-    // }, 1500);
+
+    // display loading for 3s
     setTimeout(() => {
         document.getElementById("loading").style.display = "none";
     }, 3000);
 
+    // load in vidoe
     setTimeout(() => {
         document.getElementById("vid").style.opacity = 1;
     }, 3000);
 
+    // load in book
     setTimeout(() => {
         document.getElementById("book").style.opacity = 1;
         document.getElementById("book").style.transform = "translateY(0px)";
         renderStory();
     }, 3400);
 
+    // load in footer
      setTimeout(() => {
         document.getElementById("prev").style.transform = "translateY(0px)";
         document.getElementById("prev").style.opacity = 1;
@@ -156,22 +159,8 @@ window.addEventListener('load', () => {
     }, 5200);
 });
 
-// check if device is touch
-// function isTouchDevice() {
-//   let isTouch = window.matchMedia('(hover: none)').matches || window.matchMedia('(pointer: coarse)').matches;
-//   if (isTouch == true) {
-//     document.getElementById("prev:hover").style.visibility = "hidden";
-//     document.getElementById("menu:hover").style.visibility = "hidden";
-//     document.getElementById("shuffle:hover").style.visibility = "hidden";
-//     document.getElementById("next:hover").style.visibility = "hidden";
-//   }};
-
-
-
-// initial story render
-// renderStory();
-
-// isTouchDevice();
+// load video
+document.getElementById("vide").play();
 
 
 // footer buttons
