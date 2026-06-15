@@ -123,41 +123,40 @@ function shuffle() {
 
 // initial loading 
 window.addEventListener('load', () => {
-
     // display loading for 3s
     setTimeout(() => {
         document.getElementById("loading").style.display = "none";
-    }, 3000);
+    }, 3400);
 
-    // load in vidoe
+    // load in video
     setTimeout(() => {
-        document.getElementById("vid").style.opacity = 1;
-    }, 3000);
+        document.getElementById("nest").style.opacity = 1;
+    }, 3400);
 
     // load in book
     setTimeout(() => {
         document.getElementById("book").style.opacity = 1;
         document.getElementById("book").style.transform = "translateY(0px)";
         renderStory();
-    }, 3400);
+    }, 3800);
 
     // load in footer
      setTimeout(() => {
         document.getElementById("prev").style.transform = "translateY(0px)";
         document.getElementById("prev").style.opacity = 1;
-    }, 4700);
+    }, 5100);
 
     setTimeout(() => {
         document.getElementById("menu").style.opacity = 1; 
         document.getElementById("shuffle").style.opacity = 1;
         document.getElementById("menu").style.transform = "translateY(0px)";
         document.getElementById("shuffle").style.transform = "translateY(0px)";
-    }, 4950);
+    }, 5350);
 
     setTimeout(() => {
         document.getElementById("next").style.opacity = 1;
         document.getElementById("next").style.transform = "translateY(0px)";
-    }, 5200);
+    }, 5550);
 });
 
 // // load video

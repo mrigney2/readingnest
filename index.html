@@ -11,10 +11,43 @@
 
 <html>
     <body>
-        <div id="loading"><div>Building the nest...</div></div>
+        <div id="loading">
+            <video id="progress" src="assets/progress.mp4" autoplay muted playsinline></video>
+            <div>Loading the nest...</div>
+            <div id="twigs">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+                <img id="twig" src="assets/twig.png">
+            </div>
+        </div>
+        
         <!-- <h1>The Reading Nest</h1> -->
         <div class="content"> 
-            <video id="vid" src="Illustration.mp4" autoplay loop muted playsinline></video>
+            <video id="nest" src="assets/nest.mp4" autoplay loop muted playsinline></video>
             <div class="book-wrapper">
                 <div id="book">
                     <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="book-border">
@@ -48,12 +81,12 @@
                     <div id="page"></div>
                 </div>
                 <div class="footer"> 
-                    <button id="prev" class="navigation"><span>❮<span class="tooltiptext">Previous</span></span></button>
+                    <button id="prev" class="navigation"><img src="assets/Prev.svg"><span class="tooltiptext">Previous</span></button>
                     <div class="footer-center">
-                        <button id="menu"><span>☰<span class="tooltiptext">Menu</span></span></button>
-                        <button id="shuffle"><span>⟲<span class="tooltiptext"></span><span class="tooltiptext">Shuffle</span></span></button>
+                        <button id="menu"><img src="assets/Menu.svg"><span class="tooltiptext">Menu</span></button>
+                        <button id="shuffle"><img src="assets/Shuffle.svg"><span class="tooltiptext">Shuffle</span></button>
                     </div>
-                    <button id="next" class="navigation"><span>❯<span class="tooltiptext">Next</span></span></button>
+                    <button id="next" class="navigation"><img src="assets/Next.svg"><span class="tooltiptext">Next</span></button>
                 </div>
             </div>
         </div>
@@ -61,12 +94,6 @@
 
         <svg aria-hidden="true" focusable="false" class="svg-defs">
             <defs>
-                <!-- <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#FFFFFF"/>
-                    <stop offset="40%" stop-color="#F6F6F6"/>
-                    <stop offset="100%" stop-color="#E3E3E3"/>
-                </linearGradient> -->
-
                 <filter id="pencil">
                     <feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="2" seed="5"/>
                     <feDisplacementMap in="SourceGraphic" scale="2.5" />
