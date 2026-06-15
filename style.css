@@ -164,7 +164,7 @@ body {
 #twig:nth-child(19) {
     position: absolute;
     top: -50px;
-    left: 0%;
+    left: -50px;
     transform: scaleX(-1) rotate(-25deg);
 }
 
@@ -192,15 +192,8 @@ body {
 #twig:nth-child(23) {
     position: absolute;
     top: -30px;
-    left: 70%;
+    left: 75%;
     transform: scaleX(-1) rotate(35deg);
-}
-
-#twig:nth-child(24) {
-    position: absolute;
-    top: -30px;
-    left: 80%;
-    transform: scaleX(-1) rotate(225deg);
 }
 
 #loading {
