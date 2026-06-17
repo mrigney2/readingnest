@@ -13,16 +13,8 @@ let currentView = "story";
 function renderStory() {
     currentStory = data.stories[currentIndex];
 
-     // fade in 
-    // document.getElementById("page").style.opacity = 0;
-    // setTimeout(() => {
-    //     document.getElementById("page").style.opacity = 1;
-    // }, 600)
     document.getElementById("page").scrollTop = 0;
     document.getElementById("page").textContent = currentStory.title + " - " + currentStory.createdAt + "\n\n" + currentStory.content;
-    // setTimeout(() => {
-    //     document.getElementById("page").textContent = currentStory.title + " - " + currentStory.createdAt + "\n\n" + currentStory.content;
-    // }, 601)
 
     document.getElementById("menu").style.setProperty("--bottom-border", "2px");
     currentView = "story";
@@ -158,10 +150,6 @@ window.addEventListener('load', () => {
         document.getElementById("next").style.transform = "translateY(0px)";
     }, 5550);
 });
-
-// // load video
-// document.getElementById("vide").play();
-
 
 // footer buttons
 document.getElementById("prev").addEventListener("click", prevStory);
