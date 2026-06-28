@@ -20,46 +20,40 @@ body {
 #twigs {
     position: absolute;
     inset: 0;
-    z-index: 4;
+    z-index: 0;
 }
 
 #twig {
-    /* position: absolute; */
     width: 250px;
-    
+    position: absolute;
 }
 
 /* left */
 #twig:nth-child(1) {
-    position: absolute;
     top: 5%;
     left: -145px;
     transform: rotate(-15deg);
 }
 
 #twig:nth-child(2) {
-    position: absolute;
     top: 20%;
     left: -145px;
     transform: rotate(45deg);
 }
 
 #twig:nth-child(3) {
-    position: absolute;
     top: 50%;
     left: -150px;
     transform: rotate(-45deg);
 }
 
 #twig:nth-child(4) {
-    position: absolute;
     top: 80%;
     left: -150px;
     transform: rotate(20deg);
 }
 
 #twig:nth-child(5) {
-    position: absolute;
     top: 85%;
     left: -80px;
     transform: rotate(-50deg);
@@ -67,50 +61,42 @@ body {
 
 /* bottom */
 #twig:nth-child(6) {
-    position: absolute;
     bottom: -100px;
     left: 10%;
     transform: scaleX(-1) rotate(-250deg);
 }
 
 #twig:nth-child(7) {
-    position: absolute;
     bottom: -50px;
     left: 10%;
     transform: scaleX(-1) rotate(45deg);
 }
 
 #twig:nth-child(8) {
-    position: absolute;
     bottom: -50px;
     left: 30%;
     transform: scaleY(-1) rotate(-30deg);
 }
 
 #twig:nth-child(9) {
-    position: absolute;
     left: 50%;
     bottom: -90px;
     transform: scaleX(-1) rotate(-50deg);
 }
 
 #twig:nth-child(10) {
-    position: absolute;
     bottom: -20px;
     left: 90%;
-    /* transform: scaleY(-1) scaleX(-1) rotate(-20deg); */
     transform: scaleX(-1) rotate(-45deg);
 }
 
 #twig:nth-child(11) {
-    position: absolute;
     bottom: -50px;
     left: 10%;
     transform: scaleX(-1) rotate(45deg);
 }
 
 #twig:nth-child(12) {
-    position: absolute;
     bottom: -30px;
     left: 70%;
     transform: scaleX(-1) rotate(10deg);
@@ -118,7 +104,6 @@ body {
 
 
 #twig:nth-child(13) {
-    position: absolute;
     bottom: -20px;
     left: 70%;
     transform: scaleX(-1) rotate(120deg);
@@ -126,35 +111,30 @@ body {
 
 /* right */
 #twig:nth-child(14) {
-    position: absolute;
     top: 85%;
     right: -100px;
     transform: rotate(30deg);
 }
 
 #twig:nth-child(15) {
-    position: absolute;
     top: 55%;
     right: -150px;
     transform: rotate(-50deg);
 }
 
 #twig:nth-child(16) {
-    position: absolute;
     top: 55%;
     right: -140px;
     transform: scaleX(-1) rotate(-10deg);
 }
 
 #twig:nth-child(17) {
-    position: absolute;
     top: 25%;
     right: -160px;
     transform: scaleX(-1) rotate(20deg);
 }
 
 #twig:nth-child(18) {
-    position: absolute;
     top: 5%;
     right: -160px;
     transform: scaleX(-1) rotate(-20deg);
@@ -162,35 +142,30 @@ body {
 
 /* top */
 #twig:nth-child(19) {
-    position: absolute;
     top: -50px;
     left: -50px;
     transform: scaleX(-1) rotate(-25deg);
 }
 
 #twig:nth-child(20) {
-    position: absolute;
     top: -20px;
     left: 30%;
     transform: scaleX(-1) rotate(-20deg);
 }
 
 #twig:nth-child(21) {
-    position: absolute;
     top: -50px;
     left: 30%;
     transform: rotate(-45deg);
 }
 
 #twig:nth-child(22) {
-    position: absolute;
     top: -40px;
     left: 50%;
     transform: rotate(120deg);
 }
 
 #twig:nth-child(23) {
-    position: absolute;
     top: -30px;
     left: 75%;
     transform: scaleX(-1) rotate(35deg);
@@ -205,7 +180,7 @@ body {
     justify-content: center;
     height: 100vh;
     z-index: 3;
-    background-color: white;
+    /* background-color: white; */
     font-size: 20px;
     gap: 8px;
 }
@@ -227,7 +202,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    /* overflow: hidden; */
     min-height: 0;
 }
 
@@ -237,10 +211,10 @@ h1 {
     height: auto;
     opacity: 0;
     transition: opacity 1.5s linear;
+    z-index: -1;
 }
 
 .book-wrapper {
-    /* overflow: hidden; */
     display: flex;
     flex: 1;
     min-height: 0;
@@ -260,6 +234,7 @@ h1 {
     transition: opacity 2.5s linear;
     transform: translateY(500px);
     transition: transform 1s ease-out;
+    background-color: white;
 }
 
 
@@ -285,7 +260,7 @@ path {
     overflow-y: auto;
     margin: 24px 12px;
     padding: 24px 24px;
-    z-index: 2;
+    /* z-index: 2; */
     font-size: 1.25rem;
     /* filter: url(#text); */
     transition: opacity .6s ease-in-out;
@@ -340,6 +315,7 @@ button {
     transition: opacity .5s linear;
     transform: translateY(48px);
     transition: transform .5s ease-out;
+    background-color: white;
 }
 
 button::before {
@@ -389,7 +365,7 @@ li:hover {
 }
 
 
-/* For devices with a minimum width of 768px (Medium) */
+/* for devices with a minimum width of 768px (Medium) */
 @media screen and (min-width: 768px) {
     body {
         padding: 40px 80px;
@@ -406,7 +382,7 @@ li:hover {
 }
 
 
-/* For devices with a minimum width of 1400px (Large) */
+/* for devices with a minimum width of 1400px (Large) */
 @media screen and (min-width: 1400px) {
     .content {
         flex-flow: row; 
@@ -444,7 +420,33 @@ li:hover {
     }
 }
 
+/* change vid on small heights */
+@media screen and (max-height: 800px) and (max-width: 1399px) {
+    #nest {
+        max-width: 200px;
+    }
+}
 
+@media screen and (max-height: 600px) and (max-width: 1399px) {
+    #nest {
+        display: none;
+    }
+}
 
+@media screen and (max-height: 600px) and (min-width: 1400px) {
+    #nest {
+        max-width: 400px;
+    }
+}
 
+@media screen and (max-height: 500px) and (min-width: 1400px) {
+    #nest {
+        display: none;
+    }
+
+    .book-wrapper {
+        height: 100%;
+        max-width: 100%;
+    }
+}
 
