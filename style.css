@@ -206,7 +206,7 @@ h1 {
     min-height: 0;
 }
 
-#nest {
+.crow {
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -376,7 +376,7 @@ li:hover {
         font-size: 2.5rem;
     }
 
-    #nest {
+    .crow {
         max-width: 450px;
         height: auto;
     }
@@ -402,7 +402,7 @@ li:hover {
         max-height: 650px;
     }
 
-    #nest {
+    .crow {
         max-width: 700px;
         height: auto;
     }
@@ -423,25 +423,25 @@ li:hover {
 
 /* change vid on small heights */
 @media screen and (max-height: 800px) and (max-width: 1399px) {
-    #nest {
+    .crow {
         max-width: 200px;
     }
 }
 
 @media screen and (max-height: 600px) and (max-width: 1399px) {
-    #nest {
+    .crow {
         display: none;
     }
 }
 
 @media screen and (max-height: 600px) and (min-width: 1400px) {
-    #nest {
+    .crow {
         max-width: 400px;
     }
 }
 
 @media screen and (max-height: 500px) and (min-width: 1400px) {
-    #nest {
+    .crow {
         display: none;
     }
 

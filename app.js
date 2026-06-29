@@ -113,10 +113,14 @@ function shuffle() {
     }
 }
 
+
 // check if video auto-plays
+document.getElementById("crow-img").style.display = "none";
+
 document.getElementById("progress").play().catch(() => {
     document.getElementById("progress").style.display = "none";
-    document.getElementById("nest").style.display = "none";
+    document.getElementById("crow-vid").style.display = "none";
+    document.getElementById("crow-img").style.display = "";
 });
 
 // initial loading 
@@ -128,7 +132,9 @@ window.addEventListener('load', () => {
 
     // load in video
     setTimeout(() => {
-        document.getElementById("nest").style.opacity = 1;
+        document.querySelectorAll(".crow").forEach(crow => {
+            crow.style.opacity = 1;
+        });
     }, 3400);
 
     // load in book
