@@ -268,6 +268,8 @@ path {
 }
 
 .tooltiptext {
+    font-family: "Quintessential", serif;
+    filter: url(#text);
     visibility: hidden;
     font-size: 16px;
     color: white;
@@ -276,9 +278,8 @@ path {
     padding: 6px 12px;
     border-radius: 4px;
     position: absolute;
-    top: -36px;
+    top: -40px;
     width: 60px;
-    filter: url(#text);
 }
 
 /* #prev .tooltiptext {
@@ -310,8 +311,8 @@ button {
     color: #393939;
     background: transparent;
     border: none;
-    height: 40px;
-    width: 40px;
+    height: 48px;
+    width: 48px;
     opacity: 0;
     transition: opacity .5s linear;
     transform: translateY(48px);
