@@ -113,8 +113,8 @@ function shuffle() {
     }
 }
 
-// if video doesn't auto-play change display
-video.play().catch(() => {
+// check if video auto-plays
+document.getElementById("loading").play().catch(() => {
     document.getElementById("loading").style.display = "none";
     document.getElementById("nest").style.display = "none";
 });
