@@ -114,7 +114,7 @@ function shuffle() {
 }
 
 // check if video auto-plays
-document.getElementById("loading").play().catch(() => {
+document.getElementById("progress").play().catch(() => {
     document.getElementById("loading").style.display = "none";
     document.getElementById("nest").style.display = "none";
 });
