@@ -113,6 +113,12 @@ function shuffle() {
     }
 }
 
+// if video doesn't auto-play change display
+video.play().catch(() => {
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("nest").style.display = "none";
+});
+
 // initial loading 
 window.addEventListener('load', () => {
     // display loading for 3s
