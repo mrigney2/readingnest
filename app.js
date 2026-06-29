@@ -63,7 +63,7 @@ function prevStory() {
     else {
         currentIndex = currentIndex + 1;
     }
-    renderStory(currentIndex);
+    renderStory();
 }
 
 // navigates to next story
@@ -75,7 +75,7 @@ function nextStory() {
     else {
         currentIndex = currentIndex - 1;
     }
-    renderStory(currentIndex);
+    renderStory();
 }
 
 // navigates to table of contents
