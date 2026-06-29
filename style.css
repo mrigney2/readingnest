@@ -204,6 +204,7 @@ h1 {
     align-items: center;
     gap: 16px;
     min-height: 0;
+    background-color: red;
 }
 
 #nest {
