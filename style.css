@@ -125,7 +125,7 @@ body {
 
 #twig:nth-child(16) {
     top: 55%;
-    right: -140px;
+    right: -180px;
     transform: scaleX(-1) rotate(-10deg);
 }
 
@@ -180,8 +180,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    z-index: 3;
-    /* background-color: white; */
+    z-index: -1;
     font-size: 20px;
     gap: 8px;
 }
@@ -261,7 +260,6 @@ path {
     overflow-y: auto;
     margin: 24px 12px;
     padding: 24px 24px;
-    /* z-index: 2; */
     font-size: 1.25rem;
     /* filter: url(#text); */
     transition: opacity .6s ease-in-out;
